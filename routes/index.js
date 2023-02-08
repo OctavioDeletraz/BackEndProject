@@ -30,19 +30,11 @@ router.get('/', (req, res) => {
     res.redirect('/api/productos')
 })
 
-
-router.use('*', (req, res, next) => {
-
-    logWarning(`${req.method} ${req.originalUrl} - ruta inexistente!`)
-
+router.get('*', (req, res, next) => {
+    logger.warn(`Route: ${req.path} 404 Not Found Method: ${req.method} `);
+    res.send("404 Not Found");
     next()
-
-})
-
-// router.get('*', (req, res) => {
-//     logger.warn(`Route: ${req.path} 404 Not Found Method: ${req.method} `);
-//     res.send("404 Not Found");
-// });
+});
 
 
 module.exports = router;
