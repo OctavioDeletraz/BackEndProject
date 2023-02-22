@@ -3,7 +3,7 @@ const {Router} = require('express');
 const router = Router();
 const sessionDBConnection = require('../db/sessionDBConnection')
 const {getLogin} = require('../controllers/login')
-
+const bcryptjs = require('bcryptjs')
 
 router.use(sessionDBConnection)
 
@@ -17,10 +17,12 @@ passport.use('local', new LocalStrategy(async (username, password, done) => {
     if (!user) {
         return done(null, false)
     }
-    if (user.password !== password) {
-        return done(null, false)
-    }
-    return done(null, user)
+    bcryptjs.compare(user.password, password, function(err, result) {
+        if (result) {
+            return done(null, false)
+        }
+        return done(null, user)
+    })
 }))
 passport.serializeUser(function (user, done){
     done(null, user.username)
@@ -36,10 +38,11 @@ router.use(passport.session())
 
 
 router.get('/', async (req, res) => {
+    const currentPort = parseInt(process.argv[2]) || 8080
     if (req.isAuthenticated()){
         res.redirect('/api/productos')
     }else{
-        res.render('loginPage.ejs')
+        res.render('loginPage.ejs', {currentPort})
     }
     
 });

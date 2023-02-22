@@ -13,6 +13,10 @@ const productsSchema = new Schema({
     image: {
         type: String,
         required: true
+    },
+    category:{
+        type: String,
+        required: true
     }
 })
 
