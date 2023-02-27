@@ -3,3 +3,7 @@
 {"code":21211,"level":"warn","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
 {"code":21211,"level":"warn","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
 {"code":21211,"level":"warn","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
+{"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}
+{"code":21211,"level":"warn","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
+{"level":"warn","message":"Route: /api/chat 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /favicon.ico 404 Not Found Method: GET "}

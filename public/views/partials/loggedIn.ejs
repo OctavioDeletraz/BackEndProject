@@ -1,19 +1,23 @@
 <div class="control has-icons-left has-icons-right columns m-4">
     <div class="column">
-        <h2 class="is-size-3">Bienvenido, <%= currentSession %></h2>
+        <h2 class="is-size-3">Bienvenido, <%= currentSession %>
+        </h2>
     </div>
     <div class="column is-half m-4">
         <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos">
             <button class="button is-link">Todo</button>
         </a>
-        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos/category/indumentaria">
-            <button class="button is-link">Indumentaria</button>
+        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos/category/electricidad">
+            <button class="button is-link">Electricidad</button>
         </a>
-        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos/category/calzado">
-            <button class="button is-link">Calzado</button>
+        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos/category/agua">
+            <button class="button is-link">Agua</button>
         </a>
-        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos/category/accesorio">
-            <button class="button is-link">Accesorios</button>
+        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos/category/gas">
+            <button class="button is-link">Gas</button>
+        </a>
+        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos/category/herramientas">
+            <button class="button is-link text-decoration-line">Herramientas</button>
         </a>
     </div>
     <div class="column">
