@@ -30,3 +30,14 @@
 {"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
 {"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
 {"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /login 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}

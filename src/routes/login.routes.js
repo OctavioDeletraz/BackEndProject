@@ -8,7 +8,7 @@ router.use(sessionDBConnection)
 
 
 router.get('/', loginController.loginUser)
-router.post('/', passport.authenticate('local', {failureRedirect: '/failedlogin', successRedirect: '/api/productos'}))
+router.post('/', passport.authenticate('local', {successRedirect: '/api/productos', failureRedirect: '/failedlogin'}))
 router.get('/failedlogin',(req, res)=>{
     res.json('error')
 })

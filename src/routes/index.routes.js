@@ -1,3 +1,4 @@
+
 import express from 'express'
 const router = express.Router()
 import passport from 'passport'
@@ -18,13 +19,14 @@ router.use(sessionDBConnection)
 router.use(passport.initialize())
 router.use(passport.session())
 
-router.use('/api/productos',isAuth, routeProducts)
+router.use('/api/productos', isAuth, routeProducts)
 router.use('/api/registro', routeRegister)
 router.use('/api/login', routeLogin)
-router.use('/api/logout',isAuth, routeLogOut)
-router.use('/api/carrito',isAuth, routeCart)
-router.use('/api/checkout',isAuth, routeCheckout)
-router.use('/api/mensajes',isAuth,routeMessages )
+router.use('/api/logout', isAuth, routeLogOut)
+router.use('/api/carrito', isAuth, routeCart)
+router.use('/api/checkout', isAuth, routeCheckout)
+router.use('/api/mensajes', isAuth, routeMessages)
+
 
 router.get('/', (req, res) => {
     res.redirect('/api/productos')

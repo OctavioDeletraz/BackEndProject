@@ -3,18 +3,26 @@ import logger from '../utils/logger.js'
 
 export const getProducts = async (req, res) => {
     try {
+
         const currentSession = req.session.passport.user
         const currentPort = parseInt(process.argv[2]) || 8000
         if (req.params._id) {
             const productByID = await productsApi.get(req.params._id)
             const product = productByID[0]
+            if (process.env.API_MODE === 'ON') {
+                return res.json(product)
+            }
             return res.render('infoPage', {
                 currentPort,
                 currentSession,
                 product
             })
+            
         }
         const products = await productsApi.get()
+        if (process.env.API_MODE === 'ON') {
+            return res.json(products)
+        }
         return res.render('index', {
             currentPort,
             currentSession,
@@ -28,6 +36,9 @@ export const createProduct = async (req, res) => {
     try {
         const productToCreate = req.body
         await productsApi.create(productToCreate)
+        if (process.env.API_MODE === 'ON') {
+            return res.json(productToCreate)
+        }
         return res.redirect('/api/productos')
     } catch (error) {
         logger.warn(`error creating product ${error}`)
@@ -54,6 +65,9 @@ export const updateProduct = async (req, res) => {
         const _id = req.params._id
         const productToUpdate = req.body
         await productsApi.update(_id, productToUpdate)
+        if (process.env.API_MODE === 'ON') {
+            return res.json(productToUpdate)
+        }
         return res.redirect('/api/productos')
     } catch (error) {
         logger.warn(`error updating product ${error}`)
@@ -64,6 +78,9 @@ export const deleteProductById = async (req, res) => {
         
         const _id = req.params._id
         await productsApi.deleteById(_id)
+        if (process.env.API_MODE === 'ON') {
+            return res.json(_id)
+        }
         return res.redirect('/api/productos')
     } catch (error) {
         logger.warn(`error deleting product ${error}`)
@@ -75,6 +92,9 @@ export const getProductsByCategory = async (req, res) => {
         const currentPort = parseInt(process.argv[2]) || 8000
         const category = req.params.category
         const products = await productsApi.getByCategory(category)
+        if (process.env.API_MODE === 'ON') {
+            return res.json(products)
+        }
         return res.render('index', {
             currentPort,
             currentSession,
