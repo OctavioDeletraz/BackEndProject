@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+import mongoose from "mongoose";
 const { Schema } = mongoose
 
 const loginSchema = new Schema({
@@ -10,34 +10,25 @@ const loginSchema = new Schema({
         type: String,
         required: true
     },
+    email: {
+        type: String,
+        required: true
+    },
+    avatar:{
+        type: String,
+        required: true
+    },
+    phone:{
+        type: String,
+        required: true
+    },
     names:{
         type: String,
         required: true
     },
-    direccion:{
+    dir:{
         type: String,
-        required: true
-    },
-    edad:{
-        type: String,
-        required: true
-    },
-    tel:{
-        type: String,
-        required: true
-    },
-    url:{
-        type: String,
-        required: true
-    },
-    cart:{
-        type: Array,
-        required: true
-    },
-    order:{
-        type: Array,
         required: true
     }
 })
-
-module.exports = mongoose.model('usuarios', loginSchema)
+export default mongoose.model('login', loginSchema);

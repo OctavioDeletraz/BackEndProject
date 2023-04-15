@@ -1,0 +1,30 @@
+<div class="control has-icons-left has-icons-right columns is-centered m-4">
+    <div class="column is-half m-4">
+        <form action="/api/productos" method="post" role="form">
+            <label class="label" for="name">Nombre: </label>
+            <input class="input is-is-info" type="text" placeholder="Ingrese nombre del producto" value="" name="name"
+                id="name" required />
+
+            <label class="label mt-4" for="price">Precio: </label>
+            <input class="input is-is-info" type="number" placeholder="Ingrese precio del producto" value=""
+                name="price" id="price" required />
+
+            <label class="label" for="image">Image: </label>
+            <input class="input is-is-info" type="text" placeholder="Ingrese link de la imagen" value="" name="image"
+                id="image" required />
+
+            <label class="label mt-4" for="category">Categoria: </label>
+            <div class="select is-is-info">
+                <select name="category" id="category" required>
+                    <option value="sanitarios">Sanitarios</option>
+                    <option value="ferreteria">Ferreteria</option>
+                    <option value="jardin">Jardin</option>
+                </select>
+            </div>
+
+            <div class="is-flex is-justify-content-center mt-4">
+                <button type="submit" id="btnProduct" class="button is-large is-is-info mt-4">Subir Producto</button>
+            </div>
+        </form>
+    </div>
+</div>

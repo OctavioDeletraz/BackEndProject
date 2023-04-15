@@ -1,9 +1,32 @@
-{"level":"warn","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{},"setName":"atlas-3b1e05-shard-0","stale":false,"type":"ReplicaSetNoPrimary"}}
-{"code":21211,"level":"warn","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
-{"code":21211,"level":"warn","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
-{"code":21211,"level":"warn","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
-{"code":21211,"level":"warn","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"level":"warn","ok":0}
 {"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}
-{"code":21211,"level":"warn","moreInfo":"https://www.twilio.com/docs/errors/21211","status":400}
-{"level":"warn","message":"Route: /api/chat 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /failedlogin 404 Not Found Method: GET "}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
 {"level":"warn","message":"Route: /favicon.ico 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /favicon.ico 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /favicon.ico 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /favicon.ico 404 Not Found Method: GET "}
+{"level":"warn","message":"Route: /favicon.ico 404 Not Found Method: GET "}
+{"level":"warn","message":"error creating new Message ValidationError: message: Path `message` is required."}
+{"level":"warn","message":"error creating new Message ValidationError: message: Path `message` is required."}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"Route: /login 404 Not Found Method: GET "}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}
+{"level":"warn","message":"error adding product to cart TypeError: Cannot read properties of undefined (reading 'cart')"}

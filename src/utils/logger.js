@@ -1,5 +1,7 @@
-require('dotenv').config()
-const winston = require('winston');
+import dotenv from 'dotenv';
+dotenv.config();
+
+import winston from 'winston';
 
 function loggerProd() {
     return winston.createLogger({
@@ -39,4 +41,4 @@ if (process.env.NODE_ENV === "PROD") {
     logger.info("logger iniciado en desarrollo");
 }
 
-module.exports = logger
+export default logger

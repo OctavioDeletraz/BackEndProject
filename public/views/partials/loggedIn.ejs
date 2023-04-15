@@ -1,32 +1,31 @@
 <div class="control has-icons-left has-icons-right columns m-4">
     <div class="column">
-        <h2 class="is-size-3">Bienvenido, <%= currentSession %>
-        </h2>
+        <h2 class="is-size-3">Bienvenido, <%= currentSession %></h2>
     </div>
     <div class="column is-half m-4">
-        <a class="m-3" href="https://ecommersedeletraz.onrender.com/api/productos">
-            <button class="button is-link">Todo</button>
+        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos">
+            <button class="button is-info">Todo</button>
         </a>
-        <a class="m-3" href="https://ecommersedeletraz.onrender.com/api/productos/category/electricidad">
-            <button class="button is-link">Electricidad</button>
+        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos/categoria/ferreteria">
+            <button class="button is-info">Ferreteria</button>
         </a>
-        <a class="m-3" href="https://ecommersedeletraz.onrender.com/api/productos/category/agua">
-            <button class="button is-link">Agua</button>
+        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos/categoria/sanitarios">
+            <button class="button is-info">Sanitarios</button>
         </a>
-        <a class="m-3" href="https://ecommersedeletraz.onrender.com/api/productos/category/gas">
-            <button class="button is-link">Gas</button>
-        </a>
-        <a class="m-3" href="https://ecommersedeletraz.onrender.com/api/productos/category/herramientas">
-            <button class="button is-link text-decoration-line">Herramientas</button>
+        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos/categoria/jardin">
+            <button class="button is-info">Jardin</button>
         </a>
     </div>
     <div class="column">
         <div class="is-flex is-justify-content-end">
-            <a class="m-3" href="https://ecommersedeletraz.onrender.com/logout">
-                <button id="btnLogout" class="button is-link">Logout</button>
+            <a class="m-3" href="http://localhost:<%= currentPort %>/api/mensajes">
+                <button id="btnCart" class="button is-info mg"><i class="fa-solid fa-comments"></i></button>
             </a>
-            <a class="m-3" href="https://ecommersedeletraz.onrender.com/api/carrito">
-                <button id="btnCart" class="button is-link mg"><i class="fa-solid fa-cart-plus"></i></button>
+            <a class="m-3" href="http://localhost:<%= currentPort %>/api/logout">
+                <button id="btnLogout" class="button is-info">Logout</button>
+            </a>
+            <a class="m-3" href="http://localhost:<%= currentPort %>/api/carrito">
+                <button id="btnCart" class="button is-info mg"><i class="fa-solid fa-cart-plus"></i></button>
             </a>
         </div>
     </div>

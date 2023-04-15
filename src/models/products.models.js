@@ -1,7 +1,7 @@
-const mongoose = require('mongoose')
+import mongoose from "mongoose";
 const { Schema } = mongoose
 
-const productsSchema = new Schema({
+const producsSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -19,5 +19,4 @@ const productsSchema = new Schema({
         required: true
     }
 })
-
-module.exports = mongoose.model('products', productsSchema)
+export default mongoose.model('products', producsSchema);

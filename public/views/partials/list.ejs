@@ -1,28 +1,37 @@
 <section class="mt-6">
     <div class="container is-flex is-justify-content-space-between is-flex-wrap-wrap" id="divList">
         <% products.forEach(product=> { %>
-            <div class="card" style="width: 250px; margin: 30px">
-                <div class="card-image" style="padding: 15px">
-                    <figure class="image is-4by3">
-                        <img src="<%=product.image %>" alt="Placeholder image" />
-                    </figure>
-                </div>
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-content">
-                            <p class="title is-4">
-                                <%=product.name %>
-                            </p>
-                            <p class="subtitle is-6">$ <%=product.price %>
-                            </p>
-                            <a class="ml-4" href="https://ecommersedeletraz.onrender.com/api/productos/<%=product._id %>">
-                                <button id="btnInfo" class="button is-outlined is-large is-link mt-4">Ver
-                                    Mas</button>
+        <div class="card" style="width: 250px; margin: 30px">
+            <div class="card-image" style="padding: 15px">
+                <figure class="image is-4by3">
+                    <img src="<%=product.image %>" alt="Placeholder image" />
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p class="title is-4"><%=product.name %></p>
+                        <p class="subtitle is-6">$ <%=product.price %></p>
+                        <div class="is-flex is-justify-content-center">
+                            <a href="http://localhost:<%= currentPort %>/api/productos/<%=product._id %>">
+                                <button id="btnInfo" class="button is-large is-info mt-4">Ver Mas</button>
+                            </a>
+                        </div>
+                        <div class="is-flex is-justify-content-center">
+                            <a class="ml-4"
+                                href="http://localhost:<%= currentPort %>/api/productos/editar/<%=product._id %>">
+                                <button id="editBtn" class="button is-small is-info mt-4"><i
+                                        class="fa-solid fa-pencil"></i></button>
+                            </a>
+                            <a class="ml-4"
+                                href="http://localhost:<%= currentPort %>/api/productos/borrar/<%=product._id %>">
+                                <button class="button is-small is-danger mt-4"><i class="fa-regular fa-circle-xmark"></i></button>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <% }); %>
+        </div>
+        <% }); %>
     </div>
 </section>
