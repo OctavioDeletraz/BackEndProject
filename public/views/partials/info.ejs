@@ -16,8 +16,8 @@
                 $ <%=product.price %>
             </p>
         </div>
-        <a class="ml-4" href="http://localhost:<%= currentPort %>/api/carrito/producto/<%=product._id %>">
-            <button id="btnInfo" class="button is-large is-info mt-4">Añadir al Carrito</button>
+        <a class="ml-4">
+            <button id="btnInfo" class="button is-large is-info mt-4" onclick="location.href='/api/carrito/producto/<%=product._id %>'">Añadir al Carrito</button>
         </a>
     </div>
 </article>

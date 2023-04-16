@@ -3,29 +3,35 @@
         <h2 class="is-size-3">Usuario: <%= currentSession %> </h2>
     </div>
     <div class="column is-half m-4">
-        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos">
-            <button class="button is-info">Todo</button>
+        <a class="m-3">
+            <button class="button is-info"
+            onclick="location.href='/api/productos'">Todo
+            </button>
         </a>
-        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos/categoria/ferreteria">
-            <button class="button is-info">Ferreteria</button>
+        <a class="m-3">
+            <button class="button is-info"
+            onclick="location.href='/api/productos/categoria/ferreteria'">Ferreteria</button>
         </a>
-        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos/categoria/sanitarios">
-            <button class="button is-info">Sanitarios</button>
+        <a class="m-3">
+            <button class="button is-info"
+            onclick="location.href='/api/productos/categoria/sanitarios'">Sanitarios</button>
         </a>
-        <a class="m-3" href="http://localhost:<%= currentPort %>/api/productos/categoria/jardin">
-            <button class="button is-info">Jardin</button>
+        <a class="m-3">
+            <button class="button is-info"
+            onclick="location.href='/api/productos/categoria/jardin'">Jardin</button>
         </a>
     </div>
     <div class="column">
         <div class="is-flex is-justify-content-end">
-            <a class="m-3" href="http://localhost:<%= currentPort %>/api/mensajes">
-                <button id="btnCart" class="button is-info mg"><i class="fa-solid fa-comments"></i></button>
+            <a class="m-3">
+                <button id="btnCart" class="button is-info mg" onclick="location.href='/api/mensajes'">
+                    <i class="fa-solid fa-comments"></i></button>
             </a>
-            <a class="m-3" href="http://localhost:<%= currentPort %>/api/logout">
-                <button id="btnLogout" class="button is-info">Logout</button>
+            <a class="m-3">
+                <button id="btnLogout" class="button is-info" onclick="location.href='/api/logout'">Logout</button>
             </a>
-            <a class="m-3" href="http://localhost:<%= currentPort %>/api/carrito">
-                <button id="btnCart" class="button is-info mg"><i class="fa-solid fa-cart-plus"></i></button>
+            <a class="m-3">
+                <button id="btnCart" class="button is-info mg" onclick="location.href='/api/carrito'"><i class="fa-solid fa-cart-plus"></i></button>
             </a>
         </div>
     </div>

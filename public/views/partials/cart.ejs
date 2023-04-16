@@ -16,11 +16,12 @@
             </p>
         </div>
         <% }); %>
-        <a class="ml-4" href="http://localhost:<%= currentPort %>/api/checkout">
-            <button class="button is-large is-info mt-4">Comprar</button>
+        onclick="location.href='/logout'"
+        <a class="ml-4">
+            <button class="button is-large is-info mt-4" onclick="location.href='/api/checkout'">Comprar</button>
         </a>
-        <a class="ml-4" href="http://localhost:<%= currentPort %>/api/productos">
-            <button class="button is-large is-info mt-4">Volver</button>
+        <a class="ml-4">
+            <button class="button is-large is-info mt-4" onclick="location.href='/api/productos'">Volver</button>
         </a>
     </div>
 </article>
